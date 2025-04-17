@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+    }
+    .fade-in {
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }
+    .fade-out {
+    animation: fadeOut 1s ease-in-out forwards;
+    }
+    body {
+      background-image: radial-gradient(#086879 1px, transparent 1px);
+      background-size: 24px 24px;
+      font-family: 'Fredoka', sans-serif;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center h-screen relative overflow-hidden" style="background-color: #cdf3fa;">
+
+  <div class="text-center fade-in">
+    <img src="https://cdn-icons-png.flaticon.com/128/9699/9699784.png" alt="Logo" class="w-24 mx-auto mb-4">
+    <h1 class="text-3xl font-bold text-gray-700">Welcome to My To-Do List</h1>
+    <p class="text-gray-600 mt-2">Organize your day with style</p>
+  </div>
+
+  <script>
+    const splash = document.querySelector("body");
+  
+    setTimeout(() => {
+      splash.classList.add("fade-out");
+      
+      setTimeout(() => {
+        window.location.href = "login.html";
+      }, 1000); // tunggu animasi selesai
+    }, 5000); // animasi mulai sebelum redirect di detik ke-4
+  </script>  
+</body>
+</html>

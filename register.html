@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: radial-gradient(#086879 1px, transparent 1px);
+      background-size: 24px 24px;
+      font-family: 'Fredoka', sans-serif;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center h-screen relative overflow-hidden">
+  <div class="rounded-2xl shadow-lg px-8 py-6 w-full max-w-sm" style="background-color: #e0f2f5;">
+    <h2 class="text-center text-xl font-bold mb-4" style="color:#003B46;">
+      Create Account
+    </h2>
+
+    <form id="registerForm">
+      <input
+        type="text"
+        id="fullName"
+        placeholder="Full Name"
+        class="w-full mb-4 px-4 py-2 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-gray-600"
+        style="background-color: #ffffff;"
+        required
+      />
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        class="w-full mb-4 px-4 py-2 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-gray-600"
+        style="background-color: #ffffff;"
+        required
+      />
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        class="w-full mb-4 px-4 py-2 rounded-lg border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-gray-600"
+        style="background-color: #ffffff;"
+        required
+      />
+      <button
+        type="submit"
+        class="w-full text-white py-2 rounded-lg hover:bg-blue-700 font-semibold"
+        style="background-color: #003B46;"
+      >
+        Sign Up
+      </button>
+    </form>
+
+    <p class="text-center text-sm mt-4" style="color: #003B46;">
+      Sudah punya akun? <a href="login.html" class="underline hover:text-blue-800">Login</a>
+    </p>
+  </div>
+</body>
+<script src="register.js"></script>
+</html>
