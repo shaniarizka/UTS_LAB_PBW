@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* Background */
+.bg-dotted {
+    background-image: radial-gradient(#66A5AD 1px, transparent 1px);
+    background-size: 15px 15px;
+}
+.border-wave { border-color: #66A5AD; }
+
+.todo-item {
+    background-color: #C4DFE6; /* Warna latar belakang */
+    padding: 10px;  /* Padding agar lebih rapi */
+    border-radius: 5px; /* Membuat sudut lebih halus */
+}
+
+/* Colors */
+.text-deep-aqua { color: #003B46; }
+.text-ocean { color: #07575B; }
+.bg-deep-aqua { background-color: #003B46; }
+.bg-ocean { background-color: #07575B; }
+.bg-wave { background-color: #66A5AD; }
+
+/* Inner Box */
+.bg-box { background-color: white; }
+
+.decorative-icon {
+      position: absolute;
+      width: 90px; 
+      opacity: 0.9;
+      z-index: 30;
+    }
+
+    .icon-laptop { bottom: 200px; right: 90px; transform: rotate(10deg); }
+    .icon-list { top: 150px; left: 130px; transform: rotate(-13deg); }
+    .icon-clip { top: -25px; right: -20px; width: 50px; transform: rotate(20deg); }
+
+    .bg-box {
+      position: relative;
+      z-index: 10; 
+    }
+
+#logout {
+    position: static;
+    bottom: 40px;
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 20;
+    margin-top: 32px;
+  }
+  
+  #todo-container {
+    position: relative;
+  }
+  
+  
